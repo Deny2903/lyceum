@@ -15,8 +15,15 @@ source venv/bin/activate
 
 ### 3. Установка зависимостей
 ```bash
-pip install -r requirements.txt
+pip install -r requirements/dev.txt
 ```
+
+### 4. Настройка переменных
+```bash
+cp .env.example .env
+```
+Вводите свои значения переменных в файле .env
+
 4. Применение миграций
 ```bash
 python manage.py migrate
